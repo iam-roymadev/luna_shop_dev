@@ -22,6 +22,7 @@ app.use(express.urlencoded({ extended: true}));
 app.use(express.static(path.join(__dirname , 'public')))
 
 //Configurar rutas
-app.use('/user' , require('./routes/user.route'));
+app.use('/user', require('./routes/user.route'));
+app.use('/product', require('./routes/product.route'));
 
 module.exports = app;
